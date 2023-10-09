@@ -1,0 +1,7 @@
+CPU,Memory,Storage,StorageEphemeral,CollectedTime,Window,Available,PodName
+0,0,0,0,Task has been ended,0,false,
+0,0,0,0,Pod Not Found,0,false,
+570,349216768000,0,0,2023-03-28 03:55:40 +0000 UTC,10004,true,slam-9095-controller
+3396,613236736000,0,0,2023-03-28 03:55:48 +0000 UTC,8422,true,slam-9095-controller
+4630,667631616000,0,0,2023-03-28 03:56:07 +0000 UTC,19119,true,slam-9095-controller
+4627,695967744000,0,0,2023-03-28 03:56:25 +0000 UTC,17907,true,slam-9095-controller

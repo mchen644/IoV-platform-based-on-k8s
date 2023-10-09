@@ -1,0 +1,43 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: worker-armv7l
+  namespace: default
+  annotations:       # 记录回滚参数
+    kubernetes.io/change-cause: "web.v1-nginx-1.19"   #记录到revision中的内容，记录版本号
+spec:
+  replicas: 1 # Pod副本预期数量
+  revisionHistoryLimit: 10 # RS历史版本保存数量
+  selector:
+    matchLabels:
+      app: worker
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%             # 滚动更新过程最大pod副本数
+      maxUnavailable: 25%       # 滚动更新过程中最大不可用pod副本数，
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: worker # Pod副本的标签
+    spec:
+      # nodeName: k8s-as1
+      hostNetwork: true
+      affinity:
+        nodeAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            nodeSelectorTerms:
+              - matchExpressions:
+                  - key: kubernetes.io/arch
+                    operator: In
+                    values:
+                      - arm
+        podAntiAffinity:
+          requiredDuringSchedulingIgnoredDuringExecution:
+            - topologyKey: kubernetes.io/hostname
+      
+      containers:
+      - name: worker
+        image: docker.io/luoxiao23333/worker_armv7l:v0
+        ports:
+         - containerPort: 8080

@@ -1,0 +1,4 @@
+v2: test complete task
+v3: change map to sync.Map in worker.go
+v4: Add request for deploying monitors pods
+v5: rewrite scheduler for obtaining request from the device and test the complete task and send the latency back to user;(192.168.1.101:8081/scheduling)

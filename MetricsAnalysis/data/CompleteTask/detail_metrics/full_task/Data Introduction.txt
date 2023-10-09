@@ -1,0 +1,2 @@
+[1,2,4] use the controller as the devices simulator
+[3] use raspi as the devices simulator

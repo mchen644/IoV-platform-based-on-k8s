@@ -1,0 +1,115 @@
+apiVersion: nvidia.com/v1
+kind: ClusterPolicy
+metadata:
+  labels:
+    app.kubernetes.io/component: gpu-operator
+  name: cluster-policy
+spec:
+  dcgmExporter:
+    args:
+    - -f
+    - /etc/dcgm-exporter/dcp-metrics-included.csv
+    image: dcgm-exporter
+    imagePullPolicy: IfNotPresent
+    nodeSelector:
+      nvidia.com/gpu.deploy.dcgm-exporter: "true"
+    priorityClassName: system-node-critical
+    repository: artifactory.****.ru/****/nvidia/nvcr.io/nvidia/k8s
+    version: 2.1.4-2.2.0-ubuntu20.04
+  devicePlugin:
+    env:
+    - name: PASS_DEVICE_SPECS
+      value: "true"
+    - name: FAIL_ON_INIT_ERROR
+      value: "true"
+    - name: DEVICE_LIST_STRATEGY
+      value: envvar
+    - name: DEVICE_ID_STRATEGY
+      value: uuid
+    - name: NVIDIA_VISIBLE_DEVICES
+      value: all
+    - name: NVIDIA_DRIVER_CAPABILITIES
+      value: all
+    image: k8s-device-plugin
+    imagePullPolicy: IfNotPresent
+    nodeSelector:
+      nvidia.com/gpu.deploy.device-plugin: "true"
+    priorityClassName: system-node-critical
+    repository: artifactory.****.ru/****/nvidia/nvcr.io/nvidia
+    securityContext:
+      privileged: true
+    version: v0.9.0-ubi8
+  driver:
+    enabled: true
+    image: driver
+    imagePullPolicy: IfNotPresent
+    licensingConfig:
+      configMapName: ""
+    nodeSelector:
+      nvidia.com/gpu.deploy.driver: "true"
+    priorityClassName: system-node-critical
+    repoConfig:
+      configMapName: ""
+      destinationDir: ""
+    repository: artifactory.****.ru/****/nvidia/nvcr.io/nvidia
+    securityContext:
+      privileged: true
+      seLinuxOptions:
+        level: s0
+    tolerations:
+    - effect: NoSchedule
+      key: nvidia.com/gpu
+      operator: Exists
+    version: 460.32.03
+  gfd:
+    env:
+    - name: GFD_SLEEP_INTERVAL
+      value: 60s
+    - name: GFD_FAIL_ON_INIT_ERROR
+      value: "true"
+    image: gpu-feature-discovery
+    imagePullPolicy: IfNotPresent
+    nodeSelector:
+      nvidia.com/gpu.deploy.gpu-feature-discovery: "true"
+    priorityClassName: system-node-critical
+    repository: artifactory.****.ru/****/nvidia/nvcr.io/nvidia
+    version: v0.4.1
+  mig:
+    strategy: single
+  operator:
+    defaultRuntime: containerd
+    initContainer:
+      image: cuda
+      imagePullPolicy: IfNotPresent
+      repository: artifactory.****.ru/****/nvidia/nvcr.io/nvidia
+      version: 11.2.1-base-ubi8
+    validator:
+      image: cuda-sample
+      imagePullPolicy: IfNotPresent
+      repository: artifactory.****.ru/****/nvidia/nvcr.io/nvidia/k8s
+      version: vectoradd-cuda10.2
+  toolkit:
+    env:
+    - name: CONTAINERD_CONFIG
+      value: /etc/containerd/config.toml
+    - name: CONTAINERD_SOCKET
+      value: /run/containerd/containerd.sock
+    - name: CONTAINERD_RUNTIME_CLASS
+      value: nvidia
+    - name: CONTAINERD_SET_AS_DEFAULT
+      value: "true"
+    image: container-toolkit
+    imagePullPolicy: IfNotPresent
+    nodeSelector:
+      nvidia.com/gpu.deploy.container-toolkit: "true"
+    priorityClassName: system-node-critical
+    repository: artifactory.****.ru/****/nvidia/nvcr.io/nvidia/k8s
+    securityContext:
+      privileged: true
+      seLinuxOptions:
+        level: s0
+    tolerations:
+    - effect: NoSchedule
+      key: nvidia.com/gpu
+      operator: Exists
+    version: 1.4.7-ubuntu18.04

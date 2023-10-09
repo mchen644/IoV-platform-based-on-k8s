@@ -1,0 +1,234 @@
+positions: instr line
+events: inuse_space(kB)
+
+ob=(1) /scheduler/Scheduler
+fl=(1) /home/hanhan/go/pkg/mod/k8s.io/apimachinery@v0.26.3/pkg/runtime/scheme.go
+fn=(1) k8s.io/apimachinery/pkg/runtime.(*Scheme).AddKnownTypeWithName
+0x8894a6 175 548
+
+ob=(1)
+fl=(2) /snap/go/current/src/net/parse.go
+fn=(2) net.open
+0x5febc6 80 544
+
+ob=(1)
+fl=(3) /snap/go/current/src/runtime/proc.go
+fn=(3) runtime.procresize
+0x4457c6 5001 516
+
+ob=(1)
+fl=(3)
+fn=(4) runtime.main
+-42881 233 0
+cfl=(3)
+cfn=(5) runtime.doInit
+calls=0 +11786 6483
+* * 548
++65 250 0
+cfl=(4) /home/hanhan/git-repo/Scheduler/main.go
+cfn=(6) main.main
+calls=0 0x138a47b 5
+* * 544
+
+ob=(1)
+fl=(3)
+fn=(7) runtime.schedinit
++4972 746 0
+cfl=(3)
+cfn=(3)
+calls=0 +42816 5001
+* * 516
+
+ob=(1)
+fl=(3)
+fn=(5)
++49630 6483 0
+cfl=(3)
+cfn=(5)
+calls=0 +49811 6506
+* * 548
++181 6506 0
+cfl=(5) /home/hanhan/go/pkg/mod/k8s.io/client-go@v0.26.3/kubernetes/scheme/register.go
+cfn=(8) k8s.io/client-go/kubernetes/scheme.init.0
+calls=0 0x11a6ca3 153
+* * 548
+
+ob=(1)
+fl=(6) /snap/go/current/src/runtime/asm_amd64.s
+fn=(9) runtime.rt0_go
++143062 349 0
+cfl=(3)
+cfn=(7)
+calls=0 -49811 746
+* * 516
+
+ob=(1)
+fl=(7) /snap/go/current/src/sync/once.go
+fn=(10) sync.(*Once).doSlow
++52230 74 0
+cfl=(8) /snap/go/current/src/net/net.go
+cfn=(11) net.listenerBacklog.func1
+calls=0 0x60baf6 377
+* * 544
+
+ob=(1)
+fl=(9) /snap/go/current/src/net/dial.go
+fn=(12) net.(*ListenConfig).Listen
+0x5e5ea4 636 0
+cfl=(10) /snap/go/current/src/net/tcpsock_posix.go
+cfn=(13) net.(*sysListener).listenTCP
+calls=0 0x604bf4 174
+* * 544
+
+ob=(1)
+fl=(9)
+fn=(14) net.Listen
++2310 709 0
+cfl=(9)
+cfn=(12)
+calls=0 * 636
+* * 544
+
+ob=(1)
+fl=(11) /snap/go/current/src/net/ipsock_posix.go
+fn=(15) net.internetSocket
++75885 142 0
+cfl=(12) /snap/go/current/src/net/sock_posix.go
+cfn=(16) net.socket
+calls=0 +106692 57
+* * 544
+
+ob=(1)
+fl=(8)
+fn=(17) net.listenerBacklog
++14745 377 0
+cfl=(7)
+cfn=(18) sync.(*Once).Do
+calls=0 +14745 65
+* * 544
+
+ob=(1)
+fl=(7)
+fn=(18)
+* 65 0
+cfl=(7)
+cfn=(10)
+calls=0 0x478161 74
+* * 544
+
+ob=(1)
+fl=(13) /snap/go/current/src/net/sock_linux.go
+fn=(19) net.maxListenerBacklog
++15124 35 0
+cfl=(2)
+cfn=(2)
+calls=0 +8726 80
+* * 544
+
+ob=(1)
+fl=(12)
+fn=(16)
++938 57 0
+cfl=(8)
+cfn=(17)
+calls=0 -15124 377
+* * 544
+
+ob=(1)
+fl=(10)
+fn=(13)
++17286 174 0
+cfl=(11)
+cfn=(15)
+calls=0 -30807 142
+* * 544
+
+ob=(1)
+fl=(8)
+fn=(11)
++28418 377 0
+cfl=(13)
+cfn=(19)
+calls=0 -18224 35
+* * 544
+
+ob=(1)
+fl=(14) /snap/go/current/src/net/http/server.go
+fn=(20) net/http.(*Server).ListenAndServe
+0x7bd7b7 2984 0
+cfl=(9)
+cfn=(14)
+calls=0 -152396 709
+* * 544
+
+ob=(1)
+fl=(1)
+fn=(21) k8s.io/apimachinery/pkg/runtime.(*Scheme).AddKnownTypes
++833305 149 0
+cfl=(1)
+cfn=(1)
+calls=0 +834799 175
+* * 548
+
+ob=(1)
+fl=(15) /home/hanhan/go/pkg/mod/k8s.io/apimachinery@v0.26.3/pkg/apis/meta/v1/register.go
+fn=(22) k8s.io/apimachinery/pkg/apis/meta/v1.AddToGroupVersion
++506651 73 0
+cfl=(1)
+cfn=(21)
+calls=0 * 149
+* * 548
+
+ob=(1)
+fl=(16) /home/hanhan/go/pkg/mod/k8s.io/apimachinery@v0.26.3/pkg/runtime/scheme_builder.go
+fn=(23) k8s.io/apimachinery/pkg/runtime.(*SchemeBuilder).AddToScheme
+0xb061a7 29 0
+cfl=(17) /home/hanhan/go/pkg/mod/k8s.io/api@v0.26.3/networking/v1/register.go
+cfn=(24) k8s.io/api/networking/v1.addKnownTypes
+calls=0 +7575359 55
+* * 548
+
+ob=(1)
+fl=(17)
+fn=(24)
++5472131 55 0
+cfl=(15)
+cfn=(22)
+calls=0 0x9049eb 73
+* * 548
+
+ob=(1)
+fl=(5)
+fn=(8)
++1477497 153 0
+cfl=(16)
+cfn=(23)
+calls=0 0xb061a7 29
+* * 548
+
+ob=(1)
+fl=(18) /home/hanhan/git-repo/Scheduler/comm.go
+fn=(25) main.RunHttpServer
++1975128 28 0
+cfl=(14)
+cfn=(26) net/http.ListenAndServe
+calls=0 +1975128 3242
+* * 544
+
+ob=(1)
+fl=(14)
+fn=(26)
+* 3242 0
+cfl=(14)
+cfn=(20)
+calls=0 0x7bd7b7 2984
+* * 544
+
+ob=(1)
+fl=(4)
+fn=(6)
++5248 5 0
+cfl=(18)
+cfn=(25)
+calls=0 * 28
+* * 544

@@ -1,0 +1,4 @@
+1:
+2: exclude latency of device-schduler
+3: update correct latency sampling logic
+4: compute total latency in scheduler, also trace fusion latency

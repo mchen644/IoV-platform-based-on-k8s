@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: worker_svc
+  labels: 
+    app: worker_svc
+spec:
+  selector:
+    app: worker
+  ports:
+  - name: worker-port
+    port: 8080
+    targetPort: 8080

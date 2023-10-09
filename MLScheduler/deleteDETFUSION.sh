@@ -1,0 +1,1 @@
+kubectl get pods --all-namespaces -o json | jq '.items[] | select(.metadata.namespace=="default" and (.metadata.name | startswith("fusion") or startswith("det"))) | "kubectl delete pod \(.metadata.name) -n \(.metadata.namespace)"' | xargs -I {} sh -c {}

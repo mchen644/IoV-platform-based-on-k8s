@@ -1,0 +1,7 @@
+CPU,Memory,Storage,StorageEphemeral,CollectedTime,Window,Available,PodName
+3951,688623616000,0,0,2023-03-29 15:49:00 +0000 UTC,12203,true,slam-20427-controller
+0,0,0,0,Task has been ended,0,false,
+0,0,0,0,Pod Not Found,0,false,
+1928,603693056000,0,0,2023-03-29 15:48:18 +0000 UTC,8099,true,slam-20427-controller
+3982,653463552000,0,0,2023-03-29 15:48:35 +0000 UTC,16839,true,slam-20427-controller
+3997,669061120000,0,0,2023-03-29 15:48:47 +0000 UTC,12603,true,slam-20427-controller

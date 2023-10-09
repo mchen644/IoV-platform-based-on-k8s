@@ -1,0 +1,39 @@
+apiVersion: apps/v1
+
+kind: Deployment
+metadata:
+  name: scheduler
+  namespace: default
+  annotations:       # 记录回滚参数
+    kubernetes.io/change-cause: "web.v1-nginx-1.19"   #记录到revision中的内容，记录版本号
+spec:
+  replicas: 1 # Pod副本预期数量
+  revisionHistoryLimit: 10 # RS历史版本保存数量
+  selector:
+    matchLabels:
+      app: my-scheduler
+  strategy:
+    rollingUpdate:
+      maxSurge: 25%             # 滚动更新过程最大pod副本数
+      maxUnavailable: 25%       # 滚动更新过程中最大不可用pod副本数，
+    type: RollingUpdate
+  template:
+    metadata:
+      labels:
+        app: my-scheduler # Pod副本的标签
+    spec:
+      serviceAccountName: my-serviceaccount
+      nodeName: controller
+      hostNetwork: true
+      containers:
+      - name: my-scheduler
+        image: docker.io/mchen644/scheduler:v515
+        command: ["sleep"]
+        args: ["infinity"]
+        env:
+        - name: Debug
+          value: "False"
+        #image:  ubuntu
+        #command: ["/bin/bash", "-c", "--"]
+        #args: ["while true; do sleep 30; done;"]
+        imagePullPolicy: IfNotPresent

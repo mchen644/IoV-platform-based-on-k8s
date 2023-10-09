@@ -1,0 +1,1405 @@
+positions: instr line
+events: inuse_space(kB)
+
+ob=(1) /scheduler/Scheduler
+fl=(1) /snap/go/current/src/bufio/bufio.go
+fn=(1) bufio.NewWriterSize
+0x7d094b 592 88922
+
+ob=(1)
+fl=(1)
+fn=(2) bufio.NewReaderSize
+-342 57 86866
+
+ob=(1)
+fl=(2) /snap/go/current/src/runtime/proc.go
+fn=(3) runtime.malg
+0x443867 4223 24073
+
+ob=(1)
+fl=(3) /snap/go/current/src/net/textproto/header.go
+fn=(4) net/textproto.MIMEHeader.Set
+0x775406 22 10243
+
+ob=(1)
+fl=(4) /snap/go/current/src/net/http/transport.go
+fn=(5) net/http.(*Transport).dialConn
++368872 1571 8194
+
+ob=(1)
+fl=(5) /snap/go/current/src/bytes/buffer.go
+fn=(6) bytes.growSlice
+0x481a3a 240 6924
+
+ob=(1)
+fl=(4)
+fn=(7) net/http.setupRewindBody
+0x7c9373 662 6657
+
+ob=(1)
+fl=(6) /snap/go/current/src/net/http/request.go
+fn=(8) net/http.NewRequestWithContext
+-113133 888 4609
+
+ob=(1)
+fl=(4)
+fn=(9) net/http.(*persistConn).readLoop
++153608 2186 3072
+
+ob=(1)
+fl=(4)
+fn=(5)
+-15610 1575 3072
++48 1577 3072
++22 1578 2560
+
+ob=(1)
+fl=(1)
+fn=(2)
++4827 56 2560
+
+ob=(1)
+fl=(7) /snap/go/current/src/net/url/url.go
+fn=(10) net/url.parse
+0x5bb788 510 2048
+
+ob=(1)
+fl=(8) /snap/go/current/src/net/fd_unix.go
+fn=(11) net.newFD
++283691 27 2048
+
+ob=(1)
+fl=(8)
+fn=(12) net.(*netFD).connect.func2
+-70062 118 2048
+
+ob=(1)
+fl=(9) /snap/go/current/src/mime/multipart/writer.go
+fn=(13) mime/multipart.(*Writer).FormDataContentType
+0x74e1af 81 2048
+
+ob=(1)
+fl=(4)
+fn=(5)
++529147 1576 2048
+
+ob=(1)
+fl=(4)
+fn=(9)
++17754 2227 2048
+
+ob=(1)
+fl=(1)
+fn=(1)
+-12448 591 2048
+
+ob=(1)
+fl=(10) /snap/go/current/src/io/io.go
+fn=(14) io.ReadAll
+0x47ad84 699 1990
+
+ob=(1)
+fl=(4)
+fn=(9)
+0x7d2d6f 2096 1536
+
+ob=(1)
+fl=(4)
+fn=(15) net/http.(*Transport).getConn
+-21546 1382 1024
+
+ob=(1)
+fl=(4)
+fn=(5)
++6966 1574 1024
+
+ob=(1)
+fl=(4)
+fn=(16) net/http.(*persistConn).writeLoop
++22134 2410 1024
+
+ob=(1)
+fl=(4)
+fn=(17) net/http.(*persistConn).roundTrip
++2995 2621 1024
+
+ob=(1)
+fl=(11) /snap/go/current/src/net/tcpsock_posix.go
+fn=(18) net.sockaddrToTCP
+0x6045a9 19 1024
+
+ob=(1)
+fl=(12) /snap/go/current/src/syscall/syscall_linux.go
+fn=(19) syscall.anyToSockaddr
+0x4c1e24 655 1024
+
+ob=(1)
+fl=(4)
+fn=(20) net/http.(*Transport).setReqCanceler
+0x7cc874 1147 880
+
+ob=(1)
+fl=(2)
+fn=(21) runtime.allgadd
+0x43bde8 551 703
+
+ob=(1)
+fl=(13) /home/hanhan/go/pkg/mod/k8s.io/apimachinery@v0.26.3/pkg/api/meta/help.go
+fn=(22) k8s.io/apimachinery/pkg/api/meta.init
+0x12c7c2a 37 536
+
+ob=(1)
+fl=(2)
+fn=(23) runtime.procresize
+0x4457c6 5001 516
+
+ob=(1)
+fl=(14) /home/hanhan/go/pkg/mod/google.golang.org/protobuf@v1.28.1/reflect/protoregistry/registry.go
+fn=(24) google.golang.org/protobuf/reflect/protoregistry.(*Files).RegisterFile.func2
+0xb237c8 171 516
+
+ob=(1)
+fl=(10)
+fn=(25) io.glob..func1
+0x47aa5d 642 516
+
+ob=(1)
+fl=(15) /snap/go/current/src/regexp/syntax/compile.go
+fn=(26) regexp/syntax.(*compiler).inst
+0x612be6 164 512
+
+ob=(1)
+fl=(16) /snap/go/current/src/crypto/x509/cert_pool.go
+fn=(27) crypto/x509.(*CertPool).addCertFunc
++826869 198 512
+
+ob=(1)
+fl=(17) /snap/go/current/src/runtime/sema.go
+fn=(28) sync.runtime_notifyListWait
+0x4699ae 512 512
+
+ob=(1)
+fl=(8)
+fn=(29) net.(*netFD).connect.func1
+0x5efaf0 106 512
+
+ob=(1)
+fl=(4)
+fn=(17)
+0x7d5548 2603 512
+
+ob=(1)
+fl=(18) /home/hanhan/git-repo/Scheduler/handler/fusion.go
+fn=(30) Scheduler/handler.SendBackFusion.func1
+0x135872d 111 512
+
+ob=(1)
+fl=(19) /snap/go/current/src/fmt/print.go
+fn=(31) fmt.Sprintf
+0x4f5c2b 240 512
+
+ob=(1)
+fl=(6)
+fn=(8)
+0x7ad972 895 512
++460 904 512
+
+ob=(1)
+fl=(5)
+fn=(32) bytes.(*Buffer).String
++984550 65 512
+
+ob=(1)
+fl=(18)
+fn=(30)
+0x1358f11 181 512
+
+ob=(1)
+fl=(4)
+fn=(7)
+0x7c93d7 663 512
+
+ob=(1)
+fl=(20) /snap/go/current/src/net/ipsock.go
+fn=(33) net.JoinHostPort
++53686 241 512
+
+ob=(1)
+fl=(3)
+fn=(4)
+-397785 22 512
+
+ob=(1)
+fl=(4)
+fn=(17)
++392369 2554 512
+
+ob=(1)
+fl=(2)
+fn=(34) runtime.main
+0x43b045 233 0
+cfl=(2)
+cfn=(35) runtime.doInit
+calls=0 0x4485d0 6483
+* * 1565
+
+ob=(1)
+fl=(2)
+fn=(36) runtime.schedinit
++5037 746 0
+cfl=(2)
+cfn=(23)
+calls=0 +42881 5001
+* * 516
+
+ob=(1)
+fl=(2)
+fn=(37) runtime.newproc.func1
++30258 4245 0
+cfl=(2)
+cfn=(38) runtime.newproc1
+calls=0 +30467 4268
+* * 24073
+cfl=(2)
+cfn=(38)
+calls=0 +30494 4270
+* * 703
+
+ob=(1)
+fl=(2)
+fn=(38)
++209 4268 0
+cfl=(2)
+cfn=(3)
+calls=0 -445 4223
+* * 24073
++27 4270 0
+cfl=(2)
+cfn=(21)
+calls=0 -32013 551
+* * 703
+
+ob=(1)
+fl=(2)
+fn=(35)
++19136 6483 0
+cfl=(2)
+cfn=(35)
+calls=0 +19317 6506
+* * 1565
++181 6506 0
+cfl=(13)
+cfn=(22)
+calls=0 0x12c7c2a 37
+* * 536
+cfl=(21) /home/hanhan/go/pkg/mod/github.com/google/gnostic@v0.5.7-v3refs/openapiv3/OpenAPIv3.pb.go
+cfn=(39) github.com/google/gnostic/openapiv3.init.0
+calls=0 0x12544f6 7038
+* * 516
+cfl=(22) /snap/go/current/src/internal/profile/legacy_profile.go
+cfn=(40) internal/profile.init
+calls=0 0x1373256 36
+* * 512
+
+ob=(1)
+fl=(23) /snap/go/current/src/runtime/asm_amd64.s
+fn=(41) runtime.rt0_go
++143062 349 0
+cfl=(2)
+cfn=(36)
+calls=0 -49811 746
+* * 516
+
+ob=(1)
+fl=(23)
+fn=(42) runtime.systemstack
++397 496 0
+cfl=(2)
+cfn=(37)
+calls=0 -162615 4245
+* * 24776
+
+ob=(1)
+fl=(24) /snap/go/current/src/sync/cond.go
+fn=(43) sync.(*Cond).Wait
++43139 70 0
+cfl=(17)
+cfn=(28)
+calls=0 -7482 512
+* * 512
+
+ob=(1)
+fl=(25) /snap/go/current/src/sync/pool.go
+fn=(44) sync.(*Pool).Get
++9389 151 0
+cfl=(10)
+cfn=(25)
+calls=0 +19186 642
+* * 516
+
+ob=(1)
+fl=(10)
+fn=(45) io.Copy
++7745 386 0
+cfl=(10)
+cfn=(46) io.copyBuffer
+calls=0 +8402 413
+* * 1184
+
+ob=(1)
+fl=(10)
+fn=(47) io.CopyN
+* 362 0
+cfl=(10)
+cfn=(45)
+calls=0 * 386
+* * 1184
+
+ob=(1)
+fl=(10)
+fn=(46)
++657 413 0
+cfl=(5)
+cfn=(48) bytes.(*Buffer).ReadFrom
+calls=0 +30187 200
+* * 1184
+cfl=(10)
+cfn=(49) io.discard.ReadFrom
+calls=0 +2196 648
+* * 516
+
+ob=(1)
+fl=(10)
+fn=(49)
++1539 648 0
+cfl=(25)
+cfn=(44)
+calls=0 -8402 151
+* * 516
+
+ob=(1)
+fl=(5)
+fn=(50) bytes.(*Buffer).grow
++26945 142 0
+cfl=(5)
+cfn=(6)
+calls=0 +28493 240
+* * 6924
+
+ob=(1)
+fl=(5)
+fn=(51) bytes.(*Buffer).Write
++503 170 0
+cfl=(5)
+cfn=(50)
+calls=0 * 142
+* * 5739
+
+ob=(1)
+fl=(5)
+fn=(48)
++543 200 0
+cfl=(5)
+cfn=(50)
+calls=0 -503 142
+* * 1184
+
+ob=(1)
+fl=(26) /snap/go/current/src/syscall/syscall_unix.go
+fn=(52) syscall.Getpeername
++266798 304 0
+cfl=(12)
+cfn=(19)
+calls=0 +263648 655
+* * 1024
+
+ob=(1)
+fl=(7)
+fn=(53) net/url.Parse
+0x5bb40d 469 0
+cfl=(7)
+cfn=(10)
+calls=0 0x5bb788 510
+* * 2048
+
+ob=(1)
+fl=(27) /snap/go/current/src/net/dial.go
+fn=(54) net.(*Dialer).DialContext
++168094 440 0
+cfl=(27)
+cfn=(55) net.(*sysDialer).dialParallel
+calls=0 +169605 449
+* * 4608
+
+ob=(1)
+fl=(27)
+fn=(55)
++1511 449 0
+cfl=(27)
+cfn=(56) net.(*sysDialer).dialSerial
+calls=0 +3961 548
+* * 4608
+
+ob=(1)
+fl=(27)
+fn=(56)
++2450 548 0
+cfl=(27)
+cfn=(57) net.(*sysDialer).dialSingle
+calls=0 +4159 580
+* * 4608
+
+ob=(1)
+fl=(27)
+fn=(57)
++1709 580 0
+cfl=(11)
+cfn=(58) net.(*sysDialer).dialTCP
+calls=0 +128196 64
+* * 4608
+
+ob=(1)
+fl=(8)
+fn=(59) net.(*netFD).connect
++39594 161 0
+cfl=(26)
+cfn=(52)
+calls=0 0x4c2a72 304
+* * 1024
++78 162 0
+cfl=(8)
+cfn=(29)
+calls=0 +1397 106
+* * 512
+
+ob=(1)
+fl=(28) /snap/go/current/src/net/ipsock_posix.go
+fn=(60) net.internetSocket
++40526 142 0
+cfl=(29) /snap/go/current/src/net/sock_posix.go
+cfn=(61) net.socket
+calls=0 +71656 70
+* * 2560
+cfl=(29)
+cfn=(61)
+calls=0 +71146 27
+* * 2048
+
+ob=(1)
+fl=(29)
+fn=(61)
++30620 27 0
+cfl=(8)
+cfn=(11)
+calls=0 +30620 27
+* * 2048
++510 70 0
+cfl=(29)
+cfn=(62) net.(*netFD).dial
+calls=0 +1745 151
+* * 1536
+cfl=(29)
+cfn=(62)
+calls=0 +2031 168
+* * 512
+cfl=(29)
+cfn=(62)
+calls=0 +2204 168
+* * 512
+
+ob=(1)
+fl=(29)
+fn=(62)
++1235 151 0
+cfl=(8)
+cfn=(59)
+calls=0 -71734 161
+* * 1024
+cfl=(8)
+cfn=(59)
+calls=0 -71656 162
+* * 512
++286 168 0
+cfl=(11)
+cfn=(18)
+calls=0 +13093 19
+* * 512
++173 168 0
+cfl=(11)
+cfn=(18)
+calls=0 +12807 19
+* * 512
+
+ob=(1)
+fl=(11)
+fn=(58)
++13465 64 0
+cfl=(11)
+cfn=(63) net.(*sysDialer).doDialTCP
+calls=0 +13823 74
+* * 4608
+
+ob=(1)
+fl=(11)
+fn=(63)
++358 74 0
+cfl=(28)
+cfn=(60)
+calls=0 -46289 142
+* * 4608
+
+ob=(1)
+fl=(15)
+fn=(64) regexp/syntax.Compile
++49546 74 0
+cfl=(15)
+cfn=(65) regexp/syntax.(*compiler).compile
+calls=0 +54559 147
+* * 512
+
+ob=(1)
+fl=(15)
+fn=(65)
++5013 147 0
+cfl=(15)
+cfn=(65)
+calls=0 +5660 101
+* * 512
++647 101 0
+cfl=(15)
+cfn=(66) regexp/syntax.(*compiler).rune
+calls=0 +3193 273
+* * 512
+
+ob=(1)
+fl=(15)
+fn=(66)
++2546 273 0
+cfl=(15)
+cfn=(26)
+calls=0 +2546 164
+* * 512
+
+ob=(1)
+fl=(30) /snap/go/current/src/regexp/regexp.go
+fn=(67) regexp.compile
++84788 182 0
+cfl=(15)
+cfn=(64)
+calls=0 -8206 74
+* * 512
+
+ob=(1)
+fl=(30)
+fn=(68) regexp.Compile
++2998 137 0
+cfl=(30)
+cfn=(67)
+calls=0 * 182
+* * 512
+
+ob=(1)
+fl=(30)
+fn=(69) regexp.MustCompile
+* 317 0
+cfl=(30)
+cfn=(68)
+calls=0 * 137
+* * 512
+
+ob=(1)
+fl=(16)
+fn=(70) crypto/x509.(*CertPool).AppendCertsFromPEM
++739083 227 0
+cfl=(16)
+cfn=(27)
+calls=0 +739083 198
+* * 512
+
+ob=(1)
+fl=(31) /snap/go/current/src/mime/multipart/formdata.go
+fn=(71) mime/multipart.(*Reader).readForm
++451376 105 0
+cfl=(32) /snap/go/current/src/mime/multipart/multipart.go
+cfn=(72) mime/multipart.(*Reader).nextPart
+calls=0 +462319 370
+* * 516
++1353 166 0
+cfl=(10)
+cfn=(47)
+calls=0 0x47a259 362
+* * 1184
+
+ob=(1)
+fl=(10)
+fn=(45)
++9590 386 0
+cfl=(10)
+cfn=(46)
+calls=0 0x47a4ea 413
+* * 516
+
+ob=(1)
+fl=(32)
+fn=(73) mime/multipart.(*Part).Close
+* 311 0
+cfl=(10)
+cfn=(45)
+calls=0 * 386
+* * 516
+
+ob=(1)
+fl=(32)
+fn=(72)
+* 370 0
+cfl=(32)
+cfn=(73)
+calls=0 * 311
+* * 516
+
+ob=(1)
+fl=(9)
+fn=(74) mime/multipart.(*part).Write
++5872 196 0
+cfl=(5)
+cfn=(51)
+calls=0 0x481625 170
+* * 5739
+
+ob=(1)
+fl=(33) /snap/go/current/src/net/http/client.go
+fn=(75) net/http.(*Client).send
++142976 176 0
+cfl=(33)
+cfn=(76) net/http.send
+calls=0 +144892 252
+* * 11634
+
+ob=(1)
+fl=(33)
+fn=(76)
++1916 252 0
+cfl=(34) /snap/go/current/src/net/http/roundtrip.go
+cfn=(77) net/http.(*Transport).RoundTrip
+calls=0 +261438 17
+* * 11634
+
+ob=(1)
+fl=(33)
+fn=(78) net/http.(*Client).do
++7044 716 0
+cfl=(33)
+cfn=(75)
+calls=0 -1916 176
+* * 11634
+
+ob=(1)
+fl=(33)
+fn=(79) net/http.(*Client).Post
++4923 844 0
+cfl=(6)
+cfn=(80) net/http.NewRequest
+calls=0 +4923 840
+* * 7681
+
+ob=(1)
+fl=(6)
+fn=(80)
+* 840 0
+cfl=(6)
+cfn=(8)
+calls=0 +230929 888
+* * 4609
+cfl=(6)
+cfn=(8)
+calls=0 +230590 878
+* * 2048
+cfl=(6)
+cfn=(8)
+calls=0 +230909 895
+* * 512
+cfl=(6)
+cfn=(8)
+calls=0 +231369 904
+* * 512
+
+ob=(1)
+fl=(33)
+fn=(79)
++63 848 0
+cfl=(35) /snap/go/current/src/net/http/header.go
+cfn=(81) net/http.Header.Set
+calls=0 +63 40
+* * 512
+
+ob=(1)
+fl=(35)
+fn=(81)
+* 40 0
+cfl=(3)
+cfn=(4)
+calls=0 * 22
+* * 512
+
+ob=(1)
+fl=(33)
+fn=(79)
++82 848 0
+cfl=(35)
+cfn=(81)
+calls=0 +82 40
+* * 10243
+
+ob=(1)
+fl=(35)
+fn=(81)
+* 40 0
+cfl=(3)
+cfn=(4)
+calls=0 * 22
+* * 10243
+
+ob=(1)
+fl=(33)
+fn=(82) net/http.(*Client).Do
++65 582 0
+cfl=(33)
+cfn=(78)
+calls=0 -5068 716
+* * 11634
+
+ob=(1)
+fl=(33)
+fn=(79)
+* 849 0
+cfl=(33)
+cfn=(82)
+calls=0 * 582
+* * 11634
+
+ob=(1)
+fl=(6)
+fn=(8)
++230380 878 0
+cfl=(7)
+cfn=(53)
+calls=0 0x5bb40d 469
+* * 2048
+
+ob=(1)
+fl=(34)
+fn=(77)
++16965 17 0
+cfl=(4)
+cfn=(83) net/http.(*Transport).roundTrip
+calls=0 +113472 545
+* * 6657
+cfl=(4)
+cfn=(83)
+calls=0 +114822 603
+* * 2048
+cfl=(4)
+cfn=(83)
+calls=0 +114730 590
+* * 1904
+cfl=(4)
+cfn=(83)
+calls=0 +113572 545
+* * 512
+cfl=(4)
+cfn=(83)
+calls=0 +114555 580
+* * 512
+
+ob=(1)
+fl=(36) /snap/go/current/src/net/http/server.go
+fn=(84) net/http.(*connReader).abortPendingRead
++6268 722 0
+cfl=(24)
+cfn=(43)
+calls=0 0x475f6b 70
+* * 512
+
+ob=(1)
+fl=(36)
+fn=(85) net/http.(*response).finishRequest
++21429 1654 0
+cfl=(36)
+cfn=(84)
+calls=0 * 722
+* * 512
+
+ob=(1)
+fl=(36)
+fn=(86) net/http.(*conn).serve
++3432 1995 0
+cfl=(36)
+cfn=(87) net/http.serverHandler.ServeHTTP
+calls=0 +21388 2936
+* * 25162
++72 2001 0
+cfl=(36)
+cfn=(85)
+calls=0 -3432 1654
+* * 512
+
+ob=(1)
+fl=(36)
+fn=(88) net/http.HandlerFunc.ServeHTTP
++5269 2122 0
+cfl=(37) /home/hanhan/git-repo/Scheduler/comm.go
+cfn=(89) main.newTask
+calls=0 0x138a6a8 172
+* * 23462
+cfl=(37)
+cfn=(89)
+calls=0 0x1389e1d 116
+* * 1184
+cfl=(18)
+cfn=(90) Scheduler/handler.fusionFinish
+calls=0 0x1358325 90
+* * 516
+
+ob=(1)
+fl=(36)
+fn=(91) net/http.(*ServeMux).ServeHTTP
++6554 2500 0
+cfl=(36)
+cfn=(88)
+calls=0 * 2122
+* * 25162
+
+ob=(1)
+fl=(36)
+fn=(87)
++6061 2936 0
+cfl=(36)
+cfn=(91)
+calls=0 * 2500
+* * 25162
+
+ob=(1)
+fl=(4)
+fn=(83)
++47422 545 0
+cfl=(4)
+cfn=(7)
+calls=0 +47422 662
+* * 6657
++100 545 0
+cfl=(4)
+cfn=(7)
+calls=0 +100 663
+* * 512
++983 580 0
+cfl=(4)
+cfn=(92) net/http.(*Transport).connectMethodForRequest
+calls=0 +6405 842
+* * 512
++175 590 0
+cfl=(4)
+cfn=(15)
+calls=0 +16791 1382
+* * 1024
+cfl=(4)
+cfn=(15)
+calls=0 +16540 1376
+* * 880
++92 603 0
+cfl=(4)
+cfn=(17)
+calls=0 +48711 2621
+* * 1024
+cfl=(4)
+cfn=(17)
+calls=0 +48363 2603
+* * 512
+cfl=(4)
+cfn=(17)
+calls=0 +47112 2554
+* * 512
+
+ob=(1)
+fl=(4)
+fn=(92)
++5155 842 0
+cfl=(4)
+cfn=(93) net/http.canonicalAddr
+calls=0 +52436 2756
+* * 512
+
+ob=(1)
+fl=(4)
+fn=(94) net/http.(*Transport).dial
++8106 1176 0
+cfl=(27)
+cfn=(54)
+calls=0 0x5e44ab 440
+* * 4608
+
+ob=(1)
+fl=(4)
+fn=(15)
++3012 1376 0
+cfl=(4)
+cfn=(20)
+calls=0 -1042 1147
+* * 880
+
+ob=(1)
+fl=(4)
+fn=(95) net/http.(*Transport).dialConnFor
++3461 1456 0
+cfl=(4)
+cfn=(5)
+calls=0 +12545 1763
+* * 88922
+cfl=(4)
+cfn=(5)
+calls=0 +12203 1762
+* * 86866
+cfl=(4)
+cfn=(5)
+calls=0 +7332 1571
+* * 8194
+cfl=(4)
+cfn=(5)
+calls=0 +9025 1614
+* * 4608
+cfl=(4)
+cfn=(5)
+calls=0 +7242 1575
+* * 3072
+cfl=(4)
+cfn=(5)
+calls=0 +7290 1577
+* * 3072
+cfl=(4)
+cfn=(5)
+calls=0 +7312 1578
+* * 2560
+cfl=(4)
+cfn=(5)
+calls=0 +12139 1762
+* * 2560
+cfl=(4)
+cfn=(5)
+calls=0 +7264 1576
+* * 2048
+cfl=(4)
+cfn=(5)
+calls=0 +12570 1763
+* * 2048
+cfl=(4)
+cfn=(5)
+calls=0 +7217 1574
+* * 1024
+
+ob=(1)
+fl=(4)
+fn=(5)
++5564 1614 0
+cfl=(4)
+cfn=(94)
+calls=0 -6473 1176
+* * 4608
++3114 1762 0
+cfl=(1)
+cfn=(2)
+calls=0 +3114 56
+* * 2560
++64 1762 0
+cfl=(1)
+cfn=(2)
+calls=0 +64 57
+* * 86866
++342 1763 0
+cfl=(1)
+cfn=(1)
+calls=0 +342 592
+* * 88922
++25 1763 0
+cfl=(1)
+cfn=(1)
+calls=0 +25 591
+* * 2048
+
+ob=(1)
+fl=(4)
+fn=(93)
++23593 2756 0
+cfl=(20)
+cfn=(33)
+calls=0 +23593 241
+* * 512
+
+ob=(1)
+fl=(38) /home/hanhan/go/pkg/mod/golang.org/x/net@v0.7.0/http2/hpack/hpack.go
+fn=(96) golang.org/x/net/http2/hpack.(*Decoder).Write
++814020 262 0
+cfl=(38)
+cfn=(97) golang.org/x/net/http2/hpack.(*Decoder).parseHeaderFieldRepr
+calls=0 +814566 316
+* * 512
+
+ob=(1)
+fl=(38)
+fn=(97)
++546 316 0
+cfl=(38)
+cfn=(98) golang.org/x/net/http2/hpack.(*Decoder).parseFieldLiteral
+calls=0 +1816 386
+* * 512
+
+ob=(1)
+fl=(38)
+fn=(98)
++1270 386 0
+cfl=(38)
+cfn=(99) golang.org/x/net/http2/hpack.(*Decoder).decodeString
+calls=0 +3505 518
+* * 512
+
+ob=(1)
+fl=(38)
+fn=(99)
++2235 518 0
+cfl=(5)
+cfn=(32)
+calls=0 +2235 65
+* * 512
+
+ob=(1)
+fl=(39) /home/hanhan/go/pkg/mod/golang.org/x/net@v0.7.0/http2/frame.go
+fn=(100) golang.org/x/net/http2.(*Framer).ReadFrame
++21056 523 0
+cfl=(39)
+cfn=(101) golang.org/x/net/http2.(*Framer).readMetaFrame
+calls=0 +41280 1580
+* * 512
+
+ob=(1)
+fl=(39)
+fn=(101)
++20224 1580 0
+cfl=(38)
+cfn=(96)
+calls=0 -25107 262
+* * 512
+
+ob=(1)
+fl=(40) /home/hanhan/go/pkg/mod/golang.org/x/net@v0.7.0/http2/transport.go
+fn=(102) golang.org/x/net/http2.(*ClientConn).readLoop
++53162 2119 0
+cfl=(40)
+cfn=(103) golang.org/x/net/http2.(*clientConnReadLoop).run
+calls=0 +55945 2224
+* * 512
+
+ob=(1)
+fl=(40)
+fn=(103)
++2783 2224 0
+cfl=(39)
+cfn=(100)
+calls=0 -73386 523
+* * 512
+
+ob=(1)
+fl=(14)
+fn=(104) google.golang.org/protobuf/reflect/protoregistry.(*Files).RegisterFile
+0xb2358b 170 0
+cfl=(14)
+cfn=(105) google.golang.org/protobuf/reflect/protoregistry.rangeTopLevelDescriptors
+calls=0 0xb25cb0 417
+* * 516
+
+ob=(1)
+fl=(14)
+fn=(105)
++10021 417 0
+cfl=(14)
+cfn=(24)
+calls=0 +573 171
+* * 516
+
+ob=(1)
+fl=(41) /home/hanhan/go/pkg/mod/google.golang.org/protobuf@v1.28.1/internal/filedesc/build.go
+fn=(106) google.golang.org/protobuf/internal/filedesc.Builder.Build
++101605 112 0
+cfl=(14)
+cfn=(104)
+calls=0 -10021 170
+* * 516
+
+ob=(1)
+fl=(42) /home/hanhan/go/pkg/mod/google.golang.org/protobuf@v1.28.1/internal/filetype/build.go
+fn=(107) google.golang.org/protobuf/internal/filetype.Builder.Build
++448322 138 0
+cfl=(41)
+cfn=(106)
+calls=0 * 112
+* * 516
+
+ob=(1)
+fl=(43) /home/hanhan/go/pkg/mod/k8s.io/client-go@v0.26.3/transport/cache.go
+fn=(108) k8s.io/client-go/transport.(*tlsTransportCache).get
++6334341 91 0
+cfl=(44) /home/hanhan/go/pkg/mod/k8s.io/client-go@v0.26.3/transport/transport.go
+cfn=(109) k8s.io/client-go/transport.TLSConfigFor
+calls=0 +6364156 99
+* * 512
+
+ob=(1)
+fl=(44)
+fn=(110) k8s.io/client-go/transport.New
++29294 54 0
+cfl=(43)
+cfn=(108)
+calls=0 * 91
+* * 512
+
+ob=(1)
+fl=(44)
+fn=(109)
++521 99 0
+cfl=(44)
+cfn=(111) k8s.io/client-go/transport.rootCertPool
+calls=0 +2564 207
+* * 512
+
+ob=(1)
+fl=(44)
+fn=(111)
++2043 207 0
+cfl=(16)
+cfn=(70)
+calls=0 0x6dc9db 227
+* * 512
+
+ob=(1)
+fl=(45) /home/hanhan/go/pkg/mod/k8s.io/client-go@v0.26.3/rest/transport.go
+fn=(112) k8s.io/client-go/rest.HTTPClientFor
++131190 33 0
+cfl=(45)
+cfn=(113) k8s.io/client-go/rest.TransportFor
+calls=0 +131464 68
+* * 512
+
+ob=(1)
+fl=(45)
+fn=(113)
++274 68 0
+cfl=(44)
+cfn=(110)
+calls=0 -133754 54
+* * 512
+
+ob=(1)
+fl=(21)
+fn=(39)
++482976 7038 0
+cfl=(21)
+cfn=(114) github.com/google/gnostic/openapiv3.file_openapiv3_OpenAPIv3_proto_init
+calls=0 +485121 8048
+* * 516
+
+ob=(1)
+fl=(21)
+fn=(114)
++2145 8048 0
+cfl=(42)
+cfn=(107)
+calls=0 0xbac0d7 138
+* * 516
+
+ob=(1)
+fl=(46) /home/hanhan/go/pkg/mod/k8s.io/client-go@v0.26.3/kubernetes/clientset.go
+fn=(115) k8s.io/client-go/kubernetes.NewForConfig
++897511 460 0
+cfl=(45)
+cfn=(112)
+calls=0 -485395 33
+* * 512
+
+ob=(1)
+fl=(47) /home/hanhan/git-repo/Scheduler/worker_pool/pod_manager.go
+fn=(116) Scheduler/worker_pool.CreateWorker
++146493 90 0
+cfl=(46)
+cfn=(115)
+calls=0 * 460
+* * 512
+
+ob=(1)
+fl=(48) /home/hanhan/git-repo/Scheduler/worker_pool/worker.go
+fn=(117) Scheduler/worker_pool.InitWorkers.func1
++12841 201 0
+cfl=(47)
+cfn=(116)
+calls=0 * 90
+* * 512
+
+ob=(1)
+fl=(18)
+fn=(118) Scheduler/handler.doFusion
++3640 18 0
+cfl=(48)
+cfn=(119) Scheduler/worker_pool.(*Worker).GetURL
+calls=0 +3640 40
+* * 512
+
+ob=(1)
+fl=(48)
+fn=(119)
+* 40 0
+cfl=(19)
+cfn=(31)
+calls=0 0x4f5c2b 240
+* * 512
+
+ob=(1)
+fl=(18)
+fn=(118)
++777 47 0
+cfl=(10)
+cfn=(14)
+calls=0 0x47ad84 699
+* * 1990
++292 58 0
+cfl=(9)
+cfn=(74)
+calls=0 0x74eeba 196
+* * 5739
++475 76 0
+cfl=(9)
+cfn=(13)
+calls=0 0x74e1af 81
+* * 1536
++46 76 0
+cfl=(33)
+cfn=(120) net/http.Post
+calls=0 +46 826
+* * 13683
+
+ob=(1)
+fl=(33)
+fn=(120)
+* 826 0
+cfl=(33)
+cfn=(79)
+calls=0 0x775447 849
+* * 6001
+cfl=(33)
+cfn=(79)
+calls=0 0x775375 844
+* * 4096
+cfl=(33)
+cfn=(79)
+calls=0 0x775406 848
+* * 3585
+
+ob=(1)
+fl=(18)
+fn=(90)
++275 90 0
+cfl=(31)
+cfn=(121) mime/multipart.(*Reader).ReadForm
+calls=0 +275 33
+* * 516
+
+ob=(1)
+fl=(31)
+fn=(121)
+* 33 0
+cfl=(31)
+cfn=(71)
+calls=0 0x74ad0b 105
+* * 516
+
+ob=(1)
+fl=(18)
+fn=(30)
++3007 181 0
+cfl=(9)
+cfn=(13)
+calls=0 0x74e1af 81
+* * 512
++96 181 0
+cfl=(33)
+cfn=(120)
+calls=0 +96 826
+* * 16388
+
+ob=(1)
+fl=(33)
+fn=(120)
+* 826 0
+cfl=(33)
+cfn=(79)
+calls=0 0x775406 848
+* * 6658
+cfl=(33)
+cfn=(79)
+calls=0 0x775447 849
+* * 5633
+cfl=(33)
+cfn=(79)
+calls=0 0x775375 844
+* * 3584
+cfl=(33)
+cfn=(79)
+calls=0 0x7753b4 848
+* * 512
+
+ob=(1)
+fl=(22)
+fn=(40)
++107282 36 0
+cfl=(30)
+cfn=(69)
+calls=0 0x6282d0 317
+* * 512
+
+ob=(1)
+fl=(37)
+fn=(89)
++93127 116 0
+cfl=(31)
+cfn=(121)
+calls=0 +93127 33
+* * 1184
+
+ob=(1)
+fl=(31)
+fn=(121)
+* 33 0
+cfl=(31)
+cfn=(71)
+calls=0 0x74b254 166
+* * 1184
+
+ob=(1)
+fl=(37)
+fn=(89)
++2187 172 0
+cfl=(18)
+cfn=(118)
+calls=0 -203787 76
+* * 13683
+cfl=(18)
+cfn=(118)
+calls=0 -204308 58
+* * 5739
+cfl=(18)
+cfn=(118)
+calls=0 -204600 47
+* * 1990
+cfl=(18)
+cfn=(118)
+calls=0 -203833 76
+* * 1536
+cfl=(18)
+cfn=(118)
+calls=0 -205377 18
+* * 512

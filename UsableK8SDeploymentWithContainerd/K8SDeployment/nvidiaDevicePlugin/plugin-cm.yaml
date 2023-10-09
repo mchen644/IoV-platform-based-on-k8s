@@ -1,0 +1,8 @@
+version: v1
+sharing:
+  timeSlicing:
+    renameByDefault: false
+    failRequestsGreaterThanOne: false
+    resources:
+      - name: nvidia.com/gpu
+        replicas: 6

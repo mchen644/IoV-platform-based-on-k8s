@@ -1,0 +1,7 @@
+CPU,Memory,Storage,StorageEphemeral,CollectedTime,Window,Available,PodName
+3920,684888064000,0,0,2023-03-28 03:41:28 +0000 UTC,11852,true,slam-9082-controller
+0,0,0,0,Task has been ended,0,false,
+0,0,0,0,Pod Not Found,0,false,
+2777,611950592000,0,0,2023-03-28 03:40:48 +0000 UTC,8053,true,slam-9082-controller
+3945,655413248000,0,0,2023-03-28 03:41:04 +0000 UTC,15835,true,slam-9082-controller
+3906,672796672000,0,0,2023-03-28 03:41:16 +0000 UTC,12072,true,slam-9082-controller
